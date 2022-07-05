@@ -4,41 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="../css/styles.css">
+
     <title>Nuestros Cafés</title>
 </head>
 
 <body>
     
     <header>
-        <section id="section-header-titulos">
+
+        <section class="container-fluid header-titulos">
             <h1>Milano Centrale</h1>
-            <h2 class="subtitulo">Coffee Shop</h2>
+            <h2>Coffee Shop</h2>
         </section>
-        <nav id="section-nav">
-            <ul>
-                <li> <a href="../index.html">Home</a></li>
-                <li> <a href="nuestrahistoria.html">Nuestra Historia</a></li>
-                <li> <a href="nuestroscafes.html">Nuestros Cafés</a></li>
-                <li> <a href="nuestrosproductos.html">Nuestros Productos</a></li>
-                <li> <a href="contacto.html">Contacto</a></li>
-            </ul>
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="../index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 col justify-content-around">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="nuestrahistoria.html">Nuestra Historia</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="nuestroscafes.html">Nuestros Cafés</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="nuestrosproductos.html">Nuestros Productos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
         </nav>
+
     </header>
 
     <main>
 
-        <hr>
+        <section class="container-fluid">
 
-        <section>
+            <article class="row nuestros-cafes">
 
-            <article id="section-nuestros-cafes">
-                <img src="../imagenes/café-random.jpg" alt="café-random">
+                <img src="../imagenes/café-random.jpg" alt="café-random" class="col-6">
 
-                <div class="tabla1">
+                <div class="tabla-cafes col-6">
                     <h2>Sabores de la casa</h2>
                     <table border="1">
                         <thead>
@@ -87,21 +120,18 @@
 
     </main>
 
-    <hr>
+    <footer class="footer">
 
-    <footer id="section-footer">
-
-        <img src="../imagenes/café-logo.jpg" alt="logo" class="logo">
-
-        <div class="redes">
-        <p>Seguinos en nuestras redes</p>
-        <a href="https://www.instagram.com/milanocentrale.oficial/" target="_blank"><img src="../imagenes/logo-instagram.jpg" alt="Instagram"></a>
-        <a href="https://www.instagram.com/milanocentrale.oficial/" target="_blank"><img src="../imagenes/logo-instagram.jpg" alt="Facebook"></a>
-        <a href="https://www.instagram.com/milanocentrale.oficial/" target="_blank"><img src="../imagenes/logo-instagram.jpg" alt="TikTok"></a>
+        <div class="footer-redes">
+        <p>Nuestras redes</p>
+        <a href="https://www.instagram.com/milanocentrale.oficial/" target="_blank"><i class="bi-instagram"></i></a>
+        <a href="https://www.instagram.com/milanocentrale.oficial/" target="_blank"><i class="bi-facebook"></i></a>
+        <a href="https://www.instagram.com/milanocentrale.oficial/" target="_blank"><i class="bi-tiktok"></i></a>
         </div>
 
     </footer>
 
+<link rel="stylesheet" href="./js/bootstrap.js">
 </body>
 
 </html>

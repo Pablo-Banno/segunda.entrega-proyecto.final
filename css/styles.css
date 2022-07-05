@@ -4,6 +4,8 @@
     font-family: 'Mukta', sans-serif;
 }
 
+/* ================ index.html =============== */
+
 /* ----- Header ----- */
 
 .header-titulos {
@@ -32,11 +34,18 @@
 
 /* ----- Nav ----- */
 
-/* ----- Quienes somos ----- */
+nav {
+    font-size: 1.2rem;
+    background-color: #2e1a06d2;
+}
+
+/* ----- Quiénes somos ----- */
 
 .quienes-somos {
     padding: 15px;
     background-color: beige;
+
+    align-items: center;
 }
 
 .quienes-somos-texto h2{
@@ -44,11 +53,30 @@
     height: 35px;
 }
 
-/* ----- Donde estamos ----- */
+.quienes-somos img {
+    width: 100%;
+}
+
+@media (max-width: 992px) {
+    .quienes-somos {
+        display: inline-flex;
+        flex-direction: column;
+        padding-top: 30px;
+    }
+    .quienes-somos-texto {
+        padding-top: 30px;
+    }
+}
+
+/* ----- Dónde estamos ----- */
 
 .donde-estamos {
-    padding: 15px;
     background-color: beige;
+
+    align-items: center;
+
+    padding-top: 7px;
+    padding-bottom: 35px;
 }
 
 .donde-estamos h2{
@@ -56,23 +84,96 @@
     height: 50px;
 }
 
-.donde-estamos a img {
+.donde-estamos img {
     width: 100%;
+
+    padding-left: 150px;
+    padding-right: 150px;
+
+    height: 200px;
+
+    object-fit: cover;
 }
 
-/* ----- Fotos ----- */
+@media (max-width: 992px) {
+    .donde-estamos img {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
 
-#carouselExampleIndicators {
-    padding: 10px;
+/* ----- Galería ----- */
+
+.contenedor-galeria {
+    padding: 1.5vh;
     background-color: beige;
-    width: 80%;
+
+    height: 100%;
+    width: 100%;
+
+    /* Acá no me deja asignarle un height concreto, porque se me interpone con el footer */
+}
+
+.grilla {
+    display: grid;
+    gap: 4px;
+    
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    grid-template-areas: 
+    "img1 img1 img2"
+    "img1 img1 img3"
+    "img4 img5 img5";
+}
+
+.grilla-img1 {
+    grid-area: img1;
+}
+.grilla-img2 {
+    grid-area: img2;
+}
+.grilla-img3 {
+    grid-area: img3;
+}
+.grilla-img4 {
+    grid-area: img4;
+}
+.grilla-img5 {
+    grid-area: img5;
+}
+
+.grilla img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.5s;
+}
+
+.grilla img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 9px 28px 3px rgba(0, 0, 0, 0.9);
+}
+
+@media (max-width: 992px) {
+    .grilla {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    
+        grid-template-areas: 
+        "img1 img1"
+        "img2 img3"
+        "img4 img5";
+    }
 }
 
 /* ----- Footer ----- */
 
 .footer {
     width: 100%;
-    background-color: black;
+    background-color: #2e1a06d2;
 }
 
 .footer-redes {
@@ -90,7 +191,7 @@
     color: white;
 }
 
-/* :::::::::: nuestrahistoria.html :::::::::: */
+/* ================ nuestrahistoria.html =============== */
 
 .nuestra-historia {
     padding: 15px;
@@ -106,14 +207,74 @@
     width: 100%;
 }
 
-/* ==================== RESPONSIVE ==================== */
+@media (max-width: 992px) {
+    .nuestra-historia {
+        display: inline-flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .nuestra-historia-texto {
+        padding-top: 15px;
+        width: 100%;
+    }
+    .nuestra-historia img {
+        width: 100%;
+    }
+}
 
-@media (nada) {
+/* ================ contacto.html =============== */
 
-    /* ----- @Nav ----- */
-    /* Acá es donde tuve el problema con la adaptación del nav */
+.contacto {
+    background-color: beige;
+    padding: 15px;
 
-/* --------------------------------------------------------------------------------------------------- */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
 
-/* nuestroscafes.html */
+.contacto h2 {
+    height: 50px;
+}
+
+.horarios  {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* ================ nuestroscafes.html =============== */
+
+.nuestros-cafes {
+    background-color: beige;
+    padding: 15px;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabla-cafes {
+    align-items: center;
+    justify-content: center;
+
+    /* No logré hacer que la tabla quedase en el medio y ocupara todo el ancho! */
+}
+
+/* ================ nuestrosproductos.html =============== */
+
+.nuestros-productos {
+    background-color: beige;
+    padding: 15px;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabla-productos {
+    align-items: center;
+    justify-content: center;
+
+    /* No logré hacer que la tabla quedase en el medio y ocupara todo el ancho! */
 }

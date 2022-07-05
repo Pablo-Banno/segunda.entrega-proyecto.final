@@ -26,28 +26,40 @@
             <h2>Coffee Shop</h2>
         </section>
 
-        <nav class="navbar navbar-expand navbar-dark bg-dark">
+        </nav>
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
 
             <div class="container-fluid">
 
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 col justify-content-around">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="./index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="./pages/nuestrahistoria.html">Nuestra Historia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="./pages/nuestroscafes.html">Nuestros Cafés</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="./pages/nuestrosproductos.html">Nuestros Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="./pages/contacto.html">Contacto</a>
-                    </li>
-                </ul>
+                <a class="navbar-brand" href="#">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 col justify-content-around">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/nuestrahistoria.html">Nuestra Historia</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/nuestroscafes.html">Nuestros Cafés</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/nuestrosproductos.html">Nuestros Productos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/contacto.html">Contacto</a>
+                        </li>
+
+                    </ul>
+
+                </div>
             </div>
         </nav>
 
@@ -58,55 +70,50 @@
         <section class="container-fluid">
 
             <article class="row quienes-somos">
-                <img src="./imagenes/café-random.jpg" alt="café-random" class="imagen col-6">
 
-                <div class="quienes-somos-texto col-6">
+                <div class="col">
+                    <img src="./imagenes/café-random.jpg" alt="café-random" class="">
+                </div>
+
+                <div class="quienes-somos-texto col">
                     <h2>Quiénes somos</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel eius perspiciatis natus illo a repellat incidunt? Animi soluta doloribus veniam odit? Exercitationem aspernatur odio ipsa quo cupiditate, mollitia voluptatibus recusandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, nisi quia ipsa, in libero aperiam quo reiciendis, nesciunt dolore ipsam esse doloremque assumenda! Voluptatem pariatur, inventore magni voluptas nam omnis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi unde autem facere perspiciatis mollitia quidem voluptas, nihil, voluptatibus voluptates consequuntur quasi aliquid laudantium odio! Sit labore vitae vel aperiam reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus fugiat sunt nesciunt? Sit delectus aliquam quasi, placeat nostrum sequi error ducimus id distinctio ea adipisci et impedit alias autem optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, quibusdam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum fugiat ab nobis porro quis dignissimos.</p>
                 </div>
             </article>
 
-            <article class="container-fluid">
-                <div class="donde-estamos">
+        </section>
+
+        <section class="donde-estamos">
+
+            <article class="justify-content-center">
+
+                <div class="container-fluid">
                     <h2>¿Dónde estamos?</h2>
+                </div>
+
+                <div class="container-fluid donde-estamos-mapa">
                     <a href="https://www.google.com/maps/place/Milano+Centrale+Specialty+Coffee/@-34.1747232,-58.9501769,17z/data=!4m5!3m4!1s0x95bb733f898711e5:0xee71938875280c50!8m2!3d-34.1747314!4d-58.9478635" target="_blank"><img src="imagenes/google-maps.jpg" alt="Google maps"></a>
                 </div>
+
             </article>
 
-            <div id="carouselExampleIndicators" class="carousel slide container-fluid" data-bs-ride="true">
+        </section>
 
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
 
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./imagenes/café-random.jpg" class="d-block w-100" alt="1">
-                </div>
-                <div class="carousel-item">
-                    <img src="./imagenes/café-random.jpg" class="d-block w-100" alt="2">
-                </div>
+        <section class="contenedor-galeria">
 
-                <div class="carousel-item">
-                    <img src="./imagenes/café-random.jpg" class="d-block w-100" alt="3">
-                </div>
-                </div>
+            <article class="grilla">
 
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-                </button>
+                <img src="./imagenes/café-random.jpg" alt="" class="grilla-img1">
+                <img src="./imagenes/café-random.jpg" alt="" class="grilla-img2">
+                <img src="./imagenes/café-random.jpg" alt="" class="grilla-img3">
+                <img src="./imagenes/café-random.jpg" alt="" class="grilla-img4">
+                <img src="./imagenes/café-random.jpg" alt="" class="grilla-img5">
 
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-                </button>
+            </article>
 
-            </div>
 
-        </section>  
+        </section>
 
     </main>
 
