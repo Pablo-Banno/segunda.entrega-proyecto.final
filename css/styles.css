@@ -1,0 +1,119 @@
+/* font-family: 'Mukta', sans-serif; */
+
+*{
+    font-family: 'Mukta', sans-serif;
+}
+
+/* ----- Header ----- */
+
+.header-titulos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: center;
+
+    color: white;
+
+    padding: 20px;
+    height: 45vh;
+
+    background-image: url(../imagenes/fondo-header.jpg);
+    background-size: cover;
+}
+
+.header-titulos h1 {
+    font-size: 2.2rem;
+}
+
+.header-titulos h2 {
+    font-size: 1.2rem;
+}
+
+/* ----- Nav ----- */
+
+/* ----- Quienes somos ----- */
+
+.quienes-somos {
+    padding: 15px;
+    background-color: beige;
+}
+
+.quienes-somos-texto h2{
+    text-align: center;
+    height: 35px;
+}
+
+/* ----- Donde estamos ----- */
+
+.donde-estamos {
+    padding: 15px;
+    background-color: beige;
+}
+
+.donde-estamos h2{
+    text-align: center;
+    height: 50px;
+}
+
+.donde-estamos a img {
+    width: 100%;
+}
+
+/* ----- Fotos ----- */
+
+#carouselExampleIndicators {
+    padding: 10px;
+    background-color: beige;
+    width: 80%;
+}
+
+/* ----- Footer ----- */
+
+.footer {
+    width: 100%;
+    background-color: black;
+}
+
+.footer-redes {
+    text-align: center;
+    padding: 5px;
+    color: white;
+}
+
+.footer-redes p{
+    font-weight: bold;
+}
+
+.footer-redes i {
+    font-size: 2rem;
+    color: white;
+}
+
+/* :::::::::: nuestrahistoria.html :::::::::: */
+
+.nuestra-historia {
+    padding: 15px;
+    background-color: beige;
+}
+
+.nuestra-historia h2{
+    text-align: center;
+    height: 50px;
+}
+
+.nuestra-historia a img {
+    width: 100%;
+}
+
+/* ==================== RESPONSIVE ==================== */
+
+@media (nada) {
+
+    /* ----- @Nav ----- */
+    /* Acá es donde tuve el problema con la adaptación del nav */
+
+/* --------------------------------------------------------------------------------------------------- */
+
+/* nuestroscafes.html */
+}
